@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale">
+  <title>SIXXI WEBSITE</title>
+  <link rel="stylesheet" href="style_original.css">
+  <link rel="stylesheet" href="style_searchbar.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://kit.fontswesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <section class="sub-header-menu">
+    <nav>
+      <a href="Homepage.html"><img src="images/Logo.jpg"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="Homepage.html">HOME</a></li>
+          <li>
+            <a href="#">MENU <b></b></a>
+            <ul>
+              <li><a href="Menu.html">Main Dish</a></li>
+              <li><a href="Dessert.html">Dessert</a></li>
+            </ul>
+          </li>
+          <li><a href="About.html">ABOUT</a></li>
+          <li><a href="Contact.html">CONTACT</a></li>
+          <li><a href="LoginRegis.html">LOGIN</a></li>
+
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Menu <i class="fa fa-cutlery"></i></h1>
+  </section>
+
+  <!-- ------ Search bar ------ -->
+  <section class="searchbar">
+  <div class="wrapper">
+    <div class="search-input">
+      <a href="" target="_blank" hidden></a>
+      <input type="text" placeholder="Type to search...">
+      <div class="autocom-box">
+        <!-- here list are inserted from javascript -->
+      </div>
+      <div class="icon"><i class="fas fa-search"></i></div>
+    </div>
+  </div>
+  </section>
+
+  <!------ Menu list ------>
+  <section class="menulist">
+    <h1>Our Wonderful menu <i class="fa fa-smile-o"></i></h1>
+    <p>Choose your favorite meal</p>
+
+    <!-- ------ Fish Session ------ -->
+    <!-- --- First row of Fish menu --- -->
+    <div id="Main-dish">
+      <h1>Fish Meals <i class="fa fa-thumbs-up"></i></h1>
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/menu1.jpg">
+          <div class="layer">
+            <h3>Grilled Salmon <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Fish/Grilled Salmon.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/menu2.jpg">
+          <div class="layer">
+            <h3>Garlic Butter Baked Salmon <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Fish/Garlic Butter Baked Salmon.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/menu3.jpg">
+          <div class="layer">
+            <h3>Salmon Pasta In Parmesan Cream Sauce <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Fish/Salmon Pasta In Parmesan Cream Sauce.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- --- Second row of Fish menu --- -->
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/menu4.jpg">
+          <div class="layer">
+            <h3>Fiesta Salmon Rice Bowls <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Fish/Fiesta Salmon Rice Bowls.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/menu5.jpg">
+          <div class="layer">
+            <h3>Baked Cajun Parmesan Salmon <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Fish/Baked Cajun Parmesan Salmon.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/menu6.jpg">
+          <div class="layer">
+            <h3>Salmon in Sun Dried Tomato Cream Sauce <br> With Pearl Couscous <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Fish/Salmon In Sun Dried Tomato Cream Sauce With Pearl Couscous.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third row of Fish menu -->
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/menu7.jpg">
+          <div class="layer">
+            <h3>5-Ingredient Asian Grilled <br> Salmon Marinade <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Fish/5-Ingredient Asian Grilled Salmon Marinade.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/menu8.jpg">
+          <div class="layer">
+            <h3>Salmon Cakes with Roasted <br> Red Bell Pepper Sauce <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Fish/Salmon Cakes with Roasted Red Bell Pepper Sauce.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/menu9.jpg">
+          <div class="layer">
+            <h3>Salmon Nicoise Salad <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Fish/Salmon Nicoise Salad.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- ------ Pork Session ------ -->
+      <!-- --- First row of pork menu --- -->
+    <div id="Main-dish">
+      <h1>Pork Meals <i class="fa fa-thumbs-up"></i></h1>
+      <div class="row">
+        <div class="menulist-col">
+
+          <img src="images/pork_menu_1.jpg">
+          <div class="layer">
+            <h3>Stuffed Pork Loin <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Pork/Stuffed Pork Loin.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/pork_menu_2.jpg">
+          <div class="layer">
+            <h3>Instant Pot Pork Chops <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Pork/Instant Pot Pork Chops.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/pork_menu_3.jpg">
+          <div class="layer">
+            <h3>French Onion Pork Chops <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Pork/French Onion Pork Chops.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- --- Second row of pork menu --- -->
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/pork_menu_4.png">
+          <div class="layer">
+            <h3>Air Fryer Pork Chops <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Pork/Air Fryer Pork Chops.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/pork_menu_5.jpg">
+          <div class="layer">
+            <h3>Glazed Pork Tenderloin <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Pork/Glazed Pork Tenderloin.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/pork_menu_6.jpg">
+          <div class="layer">
+            <h3>Roast Pork Tenderloin <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Pork/Roast Pork Tenderloin.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third row of pork menu -->
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/pork_menu_7.jpg">
+          <div class="layer">
+            <h3>Garlic Rosemary Pork Chops <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Pork/Garlic Rosemary Pork Chops.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/pork_menu_8.png">
+          <div class="layer">
+            <h3>Instant Pot Pulled Pork <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Pork/Instant Pot Pulled Pork.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/pork_menu_9.jpg">
+          <div class="layer">
+            <h3>Baked Pork Chops <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Pork/Baked Pork Chops.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- ------ Chicken Session ------ -->
+      <!-- --- First row of Chicken menu --- -->
+    <div id="Main-dish">
+      <h1>Chicken Meals <i class="fa fa-thumbs-up"></i></h1>
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/Chicken_menu_1.jpg">
+          <div class="layer">
+            <h3>Chicken Piccata <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Chicken/Chicken Piccata.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Chicken_menu_2.jpg">
+          <div class="layer">
+            <h3>Creamy Tomato Chicken Skillet Dinner <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Chicken/Creamy Tomato Chicken Skillet Dinner.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Chicken_menu_3.jpg">
+          <div class="layer">
+            <h3>One Pan Honey Mustard <br> Chicken and Vegetables <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Chicken/One Pan Honey Mustard Chicken and Vegetables.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- --- Second row of Chicken menu --- -->
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/Chicken_menu_4.jpg">
+          <div class="layer">
+            <h3>Stovetop Butter Chicken <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Chicken/Stovetop Butter Chicken.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Chicken_menu_5.jpg">
+          <div class="layer">
+            <h3>Lemon Chicken <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Chicken/Lemon Chicken.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Chicken_menu_6.jpg">
+          <div class="layer">
+            <h3>Pesto Chicken Bruschetta <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Chicken/Pesto Chicken Bruschetta.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third row of Chicken menu -->
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/Chicken_menu_7.jpg">
+          <div class="layer">
+            <h3>Chicken Empanadas <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Chicken/Chicken Empanadas.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Chicken_menu_8.jpg">
+          <div class="layer">
+            <h3>Buffalo Chicken Bites with <br> Blue Cheese Dressing <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Chicken/Buffalo Chicken Bites with Blue Cheese Dressing.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Chicken_menu_9.jpg">
+          <div class="layer">
+            <h3>Roasted Salsa Verde Chicken Nachos <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Chicken/Roasted Salsa Verde Chicken Nachos.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- ------ Beef Session ------ -->
+      <!-- --- First row of Beef menu --- -->
+    <div id="Main-dish">
+      <h1>Beef Meals <i class="fa fa-thumbs-up"></i></h1>
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/Beef_menu_1.jpg">
+          <div class="layer">
+            <h3>Thai Basil Beef <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Beef/Thai Basil Beef.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Beef_menu_2.jpg">
+          <div class="layer">
+            <h3>Gingery Ground Beef (Soboro Donburi) <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Beef/Gingery Ground Beef (Soboro Donburi).html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Beef_menu_3.jpg">
+          <div class="layer">
+            <h3>Crock-Pot Taco Meat <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Beef/Crock-Pot Taco Meat.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- --- Second row of Beef menu --- -->
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/Beef_menu_4.jpg">
+          <div class="layer">
+            <h3>Classic Cheese Burger with Secret Sauce <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Beef/Classic Cheese Burger with Secret Sauce.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Beef_menu_5.jpg">
+          <div class="layer">
+            <h3>Patty Melt <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Beef/Patty Melt.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Beef_menu_6.jpg">
+          <div class="layer">
+            <h3>Meatball Sub Sandwich <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Beef/Meatball Sub Sandwich.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third row of Beef menu -->
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/Beef_menu_7.jpg">
+          <div class="layer">
+            <h3>Beef Sliders with Sun-Dried <br> Tomato Mayo and Spicy Pickles <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Beef/Beef Sliders with Sun-Dried Tomato Mayo and Spicy Pickles.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Beef_menu_8.jpg">
+          <div class="layer">
+            <h3>Low-Carb Bacon Burger with Guacamole <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Beef/Low-Carb Bacon Burger with Guacamole.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Beef_menu_9.jpg">
+          <div class="layer">
+            <h3>Swedish Meatballs <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Beef/Swedish Meatballs.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- ------ Vegetarian Session ------ -->
+      <!-- --- First row of Vegetarian menu --- -->
+    <div id="Main-dish">
+      <h1>Vegetarian Meals <i class="fa fa-thumbs-up"></i></h1>
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/Vegetarian_menu_1.jpg">
+          <div class="layer">
+            <h3>Walnut and Lentil Bolognese <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Vegetarian/Walnut and Lentil Bolognese.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Vegetarian_menu_2.jpg">
+          <div class="layer">
+            <h3>Vegetable Soup <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Vegetarian/Vegetable Soup.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Vegetarian_menu_3.jpg">
+          <div class="layer">
+            <h3>Vegan Roasted Sweet Potato Salad <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Vegetarian/Vegan Roasted Sweet Potato Salad.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- --- Second row of Vegetarian menu --- -->
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/Vegetarian_menu_4.jpg">
+          <div class="layer">
+            <h3>Shaved Brussels Sprout Salad <br> with Creamy Maple Dressing <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Beef/Classic Cheese Burger with Secret Sauce.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Vegetarian_menu_5.jpg">
+          <div class="layer">
+            <h3>Vegetarian Burrito Bowl with Avocado Crema <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Vegetarian/Vegetarian Burrito Bowl with Avocado Crema.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Vegetarian_menu_6.jpg">
+          <div class="layer">
+            <h3>Green Curry Buddha Bowl <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Vegetarian/Green Curry Buddha Bowl.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third row of Vegetarian menu -->
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/Vegetarian_menu_7.jpg">
+          <div class="layer">
+            <h3>Creamy Goat Cheese Polenta With Ratatouille <br> Tomato Mayo and Spicy Pickles <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Vegetarian/Creamy Goat Cheese Polenta With Ratatouille.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Vegetarian_menu_8.jpg">
+          <div class="layer">
+            <h3>Curried Cauliflower Quinoa Salad <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Vegetarian/Curried Cauliflower Quinoa Salad.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+        
+        <div class="menulist-col">
+          <img src="images/Vegetarian_menu_9.jpg">
+          <div class="layer">
+            <h3>Curried Pumpkin Soup <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Vegetarian/Curried Pumpkin Soup.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------ testimontials ------>
+  <section class="testimontials">
+    <h1>What Our Customer Says <i class="fa fa-commenting"></i></h1>
+    <p>Marvelous meal make you feel like living in paradise</p>
+
+    <!-- ------ First row of testimontials ------ -->
+    <div class="row">
+      <div class="testimontials-col">
+        <img src="images/reviewer1.png">
+        <div>
+          <p>This spicy glaze is so addictive.</p>
+          <h3>พงษ์ธวัช เฉลิมกิตติชัย (เชฟเอียน) Executive Chef ชาวไทยคนแรกในโรงแรม 5 ดาวในประเทศไทย</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+      </div>
+      <div class="testimontials-col">
+        <img src="images/reviewer2.png">
+        <div>
+          <p>There's maple bacon, so obviously it's epic.</p>
+          <h3>หม่อมหลวงขวัญทิพย์ เทวกุล (เชฟป้อม) นักโภชนาการและเชฟที่มีชื่อเสียงจากการเป็นกรรมการรายการแข่งขันทำอาหาร มาสเตอร์เชฟไทยแลนด์</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------ Second row of testimontials ------ -->
+    <div class="row">
+      <div class="testimontials-col">
+        <img src="images/reviewer3.png">
+        <div>
+          <p>Best Cheesy Garlic Bread.</p>
+          <h3>ปิยธิดา มิตรธีรโรจน์ (คุณป๊อก) เป็นนักแสดง, พิธีกร ชาวไทย</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+      </div>
+      <div class="testimontials-col">
+        <img src="images/reviewer4.png">
+        <div>
+          <p>Corned beef hash is better than my mother used to make!</p>
+          <h3>หม่อมหลวงภาสันต์ สวัสดิวัตน์ (หม่อมอิงค์) เป็นผู้เชี่ยวชาญในการทำอาหารและเป็นกรรมการในรายการมาสเตอร์เชฟไทยแลนด์ทุกซีซั่น</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------ Footer ------>
+  <section class="footer">
+    <h4>Our media <i class="fa fa-handshake-o"></i></h4>
+    <p>Our social media for receiving new information and update <br> Thank you for your support</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> by Our Professional Team</p>
+  </section>
+
+  <!------ JavaScript for Toggle Menu ------>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+  <script src="suggestions.js"></script> 
+  <script src="maindish_searchbar.js"></script> 
+
+</body>
+</html>

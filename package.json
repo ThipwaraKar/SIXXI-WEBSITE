@@ -1,0 +1,32 @@
+{
+  "name": "sixxi-website",
+  "version": "1.0.0",
+  "description": "This is a Project for the ITCS379_Practical Software Engineering (Mj.SE) which open public for reviewing. * Members",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iiceemkl/SIXXI-WEBSITE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iiceemkl/SIXXI-WEBSITE/issues"
+  },
+  "homepage": "https://github.com/iiceemkl/SIXXI-WEBSITE#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "model": "^6.0.1",
+    "mongoose": "^6.0.12",
+    "passport-local": "^1.0.0",
+    "user": "^0.0.0",
+    "yarn": "^1.22.17"
+  }
+}

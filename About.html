@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale">
+  <title>SIXXI WEBSITE</title>
+  <link rel="stylesheet" href="style_original.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <section class="sub-header">
+    <nav>
+      <a href="Homepage.html"><img src="images/Logo.jpg"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="Homepage.html">HOME</a></li>
+          <li>
+            <a href="#">MENU <b></b></a>
+            <ul>
+              <li><a href="Menu.html">Main Dish</a></li>
+              <li><a href="Dessert.html">Dessert</a></li>
+            </ul>
+          </li>
+          <li><a href="About.html">ABOUT</a></li>
+          <li><a href="Contact.html">CONTACT</a></li>
+          <li><a href="LoginRegis.html">LOGIN</a></li>
+
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us <i class="fa fa-users"></i></h1>
+  </section>
+
+  <!------ About us content ------>
+  <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>We are the world's largest food delivery website</h1>
+        <p>Sixxi website provides food delivery with high-quality ingredients all over the world along with the how-to-cook guiding video which will make your life easier and convenient.</p>
+        <a href="" class="hero-btn black-btn">EXPLORE NOW</a>
+      </div>
+      <div class="about-col"></div>
+      <img src="images/groupmember.jpg">
+    </div>
+  </section>
+
+  <!------ About Us ------>
+  <section class="member">
+    <h1><i class="fa fa-user-circle"></i> Our Members <i class="fa fa-user-circle-o"></i></h1>
+    <p>The Faculty of Information and Communication Technology, Mahidol University</p>
+
+    <div class="row">
+      <div class="member-col">
+        <img src="images/member1.png">
+        <h3>6188010</h3>
+        <p>Chansida Makaranond <br> Software Tester <br> Secondary Database Administrator</p>
+      </div>
+      <div class="member-col">
+        <img src="images/member2.png">
+        <h3>6188053</h3>
+        <p>Thipwara Karphondee <br> Product Owner <br> Web Designer <br> Software Tester <br> Secondary Front-End Web Developer</p>
+      </div>
+      <div class="member-col">
+        <img src="images/member3.png">
+        <h3>6188055</h3>
+        <p>Mangkhales Ngamjaruskotchakorn <br> Secondary Web Designer <br> Front-end Web Developer <br> Secondary Back-end Web Developer </p>
+      </div>
+      <div class="member-col">
+        <img src="images/member4.png">
+        <h3>6188112</h3>
+        <p>Pimolporn Malsuthi <br> SCRUM MASTER <br> Database Administrator <br> Back-end Web Developer</p>
+      </div>
+      <div class="member-col">
+        <img src="images/member5.png">
+        <h3>6188113</h3>
+        <p>Piraya Chantip <br> Software Tester <br> User Interface Designer <br> Secondary Back-end Web Developer </p>
+      </div>
+      <div class="member-col">
+        <img src="images/member6.png">
+        <h3>6188136</h3>
+        <p>Ornpicha Arunsangsil <br> Software Tester <br> Logo Web Desinger <br> Secondary Web Designer <br> Secondary Front-end Web Developer</p>
+      </div>
+    </div>
+  </section>
+
+  <!------ Footer ------>
+  <section class="footer">
+    <h4>Our media <i class="fa fa-handshake-o"></i></h4>
+    <p>Our social media for receiving new information and update <br> Thank you for your support</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> by Our Professional Team</p>
+  </section>
+
+  <!------ JavaScript for Toggle Menu ------>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>

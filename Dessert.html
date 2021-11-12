@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale">
+  <title>SIXXI WEBSITE</title>
+  <link rel="stylesheet" href="style_original.css">
+  <link rel="stylesheet" href="style_searchbar.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://kit.fontswesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <section class="sub-header-menu">
+    <nav>
+      <a href="Homepage.html"><img src="images/Logo.jpg"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="Homepage.html">HOME</a></li>
+          <li>
+            <a href="#">MENU <b></b></a>
+            <ul>
+              <li><a href="Menu.html">Main Dish</a></li>
+              <li><a href="Dessert.html">Dessert</a></li>
+            </ul>
+          </li>
+          <li><a href="About.html">ABOUT</a></li>
+          <li><a href="Contact.html">CONTACT</a></li>
+          <li><a href="LoginRegis.html">LOGIN</a></li>
+
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Menu <i class="fa fa-cutlery"></i></h1>
+  </section>
+
+  <!-- ------ Search bar ------ -->
+  <section class="searchbar">
+    <div class="wrapper">
+      <div class="search-input">
+        <a href="" target="_blank" hidden></a>
+        <input type="text" placeholder="Type to search...">
+        <div class="autocom-box">
+          <!-- here list are inserted from javascript -->
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
+    </section>
+
+  <!------ Menu list ------>
+  <section class="menulist">
+    <h1>Our Wonderful menu <i class="fa fa-smile-o"></i></h1>
+    <p>Choose your favorite meal</p>
+
+    <!-- Pancakes Session -->
+    <!-- --- First row of Pancakes menu --- -->
+    <div id="Dessert">
+      <h1>Pancakes <i class="fa fa-thumbs-up"></i></h1>
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/Pancakes_menu_1.jpg">
+          <div class="layer">
+            <h3>Buttermilk Pancakes <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Pancakes/Buttermilk Pancakes.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Pancakes_menu_2.jpg">
+          <div class="layer">
+            <h3>Trail Mix Pancakes <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Pancakes/Trail Mix Pancakes.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Pancakes_menu_3.jpg">
+          <div class="layer">
+            <h3>Dutch Baby Pancake<br> Chip Cookies Recipe<br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Pancakes/Dutch Baby Pancake.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cake Session -->
+    <!-- --- First row of Cake menu --- -->
+    <div id="Dessert">
+      <h1>Cake <i class="fa fa-thumbs-up"></i></h1>
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/Cake_menu_1.jpg">
+          <div class="layer">
+            <h3>Banana Walnut Cake <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Cake/Banana Walnut Cake.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Cake_menu_2.jpg">
+          <div class="layer">
+            <h3>Baileys Chocolate Bundt Cake <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Cake/Baileys Chocolate Bundt Cake.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Cake_menu_3.jpg">
+          <div class="layer">
+            <h3>Joanna’s Lemon Olive Oil Cake <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Cake/Joanna’s Lemon Olive Oil Cake.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cookie Session -->
+    <!-- --- First row of Cookie menu --- -->
+    <div id="Dessert">
+      <h1>Cookie <i class="fa fa-thumbs-up"></i></h1>
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/Cookie_menu_1.jpg">
+          <div class="layer">
+            <h3>Cookie Brittle <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Cookie/Cookie Brittle.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Cookie_menu_2.jpg">
+          <div class="layer">
+            <h3>Salty Dark and Milk Chocolate Skillet Cookie <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Cookie/Salty Dark and Milk Chocolate Skillet Cookie.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Cookie_menu_3.jpg">
+          <div class="layer">
+            <h3>Crinkle Cookies with Peppermint Cream <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Cookie/Crinkle Cookies with Peppermint Cream.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ice Cream Session -->
+    <!-- --- First row of Ice Cream menu --- -->
+    <div id="Dessert">
+      <h1>Ice Cream <i class="fa fa-thumbs-up"></i></h1>
+      <div class="row">
+        <div class="menulist-col">
+          <img src="images/Ice Cream_menu_1.jpg">
+          <div class="layer">
+            <h3>Vegan Mint Chip Ice Cream <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Ice Cream/Vegan Mint Chip Ice Cream.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Ice Cream_menu_2.jpg">
+          <div class="layer">
+            <h3>Salted Caramel Apple Sundae <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Ice Cream/Salted Caramel Apple Sundae.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+
+        <div class="menulist-col">
+          <img src="images/Ice Cream_menu_3.jpg">
+          <div class="layer">
+            <h3>Coconut Cream Popsicles With Vanilla <br>  Bean And Malibu Rum <br> Price: 20 <i class="fa fa-usd"></i> <br> Difficulty:
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i><br />
+              <a href="Ice Cream/Coconut Cream Popsicles With Vanilla Bean And Malibu Rum.html" class="hero-btn black-btn">SEE MORE</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------ testimontials ------>
+  <section class="testimontials">
+    <h1>What Our Customer Says <i class="fa fa-commenting"></i></h1>
+    <p>Marvelous meal make you feel like living in paradise</p>
+
+    <!-- ------ First row of testimontials ------ -->
+    <div class="row">
+      <div class="testimontials-col">
+        <img src="images/reviewer1.png">
+        <div>
+          <p>This spicy glaze is so addictive.</p>
+          <h3>พงษ์ธวัช เฉลิมกิตติชัย (เชฟเอียน) Executive Chef ชาวไทยคนแรกในโรงแรม 5 ดาวในประเทศไทย</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+      </div>
+      <div class="testimontials-col">
+        <img src="images/reviewer2.png">
+        <div>
+          <p>There's maple bacon, so obviously it's epic.</p>
+          <h3>หม่อมหลวงขวัญทิพย์ เทวกุล (เชฟป้อม) นักโภชนาการและเชฟที่มีชื่อเสียงจากการเป็นกรรมการรายการแข่งขันทำอาหาร มาสเตอร์เชฟไทยแลนด์</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------ Second row of testimontials ------ -->
+    <div class="row">
+      <div class="testimontials-col">
+        <img src="images/reviewer3.png">
+        <div>
+          <p>Best Cheesy Garlic Bread.</p>
+          <h3>ปิยธิดา มิตรธีรโรจน์ (คุณป๊อก) เป็นนักแสดง, พิธีกร ชาวไทย</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+      </div>
+      <div class="testimontials-col">
+        <img src="images/reviewer4.png">
+        <div>
+          <p>Corned beef hash is better than my mother used to make!</p>
+          <h3>หม่อมหลวงภาสันต์ สวัสดิวัตน์ (หม่อมอิงค์) เป็นผู้เชี่ยวชาญในการทำอาหารและเป็นกรรมการในรายการมาสเตอร์เชฟไทยแลนด์ทุกซีซั่น</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------ Footer ------>
+  <section class="footer">
+    <h4>Our media <i class="fa fa-handshake-o"></i></h4>
+    <p>Our social media for receiving new information and update <br> Thank you for your support</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> by Our Professional Team</p>
+  </section>
+
+  <!------ JavaScript for Toggle Menu ------>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+  <script src="suggestions.js"></script> 
+  <script src="dessert_searchbar.js"></script> 
+</body>
+
+</html>

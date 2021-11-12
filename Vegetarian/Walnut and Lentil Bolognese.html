@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale">
+  <title>SIXXI WEBSITE</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style_original.css">
+  <style media="screen">
+    .icons .fab {
+      margin: 0 13px;
+      cursor: pointer;
+      padding: 18px 0;
+    }
+
+    .icons .fab-facebook {
+      color: #3b5998;
+    }
+
+    .icons .fab-twitter {
+      color: #00acee;
+    }
+
+    .icons .fab-instagram {
+      color: #C13584;
+    }
+
+    .icons .fab-linkedin {
+      color: #0077b5;
+    }
+
+    .fa-heart {
+      color: #f44336;
+    }
+
+    li{
+      width: 124px;
+      height: 37px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <section class="sub-header-foodInfo">
+    <nav>
+      <a href="../Homepage.html"><img src="../images/Logo.jpg"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="../Homepage.html">HOME</a></li>
+          <li>
+            <a href="#">MENU <b></b></a>
+            <ul>
+              <li><a href="../Menu.html">Main Dish</a></li>
+              <li><a href="../Dessert.html">Dessert</a></li>
+            </ul>
+          </li>
+          <li><a href="../About.html">ABOUT</a></li>
+          <li><a href="../Contact.html">CONTACT</a></li>
+
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Food Details <i class="fas fa-utensils"></i></h1>
+  </section>
+
+  <!-- about us content ------>
+  <section class="foodInfo">
+    <div class="row">
+
+      <div class="foodInfo-col">
+        <div id="testimonials-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active carousel-trasition container-fluid">
+              <img class="testimonials-image" src="../images/Vegetarian_menu_1.jpg" alt="Jane">
+            </div>
+            <div class="carousel-item carousel-trasition container-fluid">
+              <img class="testimonials-image" src="../images/Vegetarian_menu_1-1.jpg" alt="">
+            </div>
+            <div class="carousel-item carousel-trasition container-fluid">
+              <img class="testimonials-image" src="../images/Vegetarian_menu_1-2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+      <div class="foodInfo-col-space"></div>
+      <div class="foodInfo-col">
+        <h1>Walnut and Lentil Bolognese</h1>
+
+        <p><span style="font-weight:bold">Description: </span>Boldly flavored, super hearty and incredibly easy, this vegan walnut and lentil bolognese recipe takes your plant-based eating goals to new heights.</p>
+        <p><span style="font-weight:bold">Ingredients: </span>2 tbsp Olive oil
+          , 1 cup Grated carrots
+          , 1 cup Celery, minced
+          , 1 cup Onions, finely minced
+          , 1 cup Walnuts, finely chopped
+          , 1 cup Dried lentils (brown or green), rinsed in a fine mesh sieve
+          , 1 (24) oz jar Marinara
+          , 6 cups Water
+          , 1 tsp Salt
+          , 1 lb Wide pasta noodles, such as pappardelle or tagliatelle
+          Parmesan cheese or vegan parmesan cheese, optional</p>
+        <p><span style="font-weight:bold">Price: </span> 20$</p>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="feature-box col-lg-2">
+              <i class="fas fa-star fa-2x"></i>
+              <h3 class="feature-title">3.1</h3>
+              <p>Rating</p>
+            </div>
+            <div class="feature-box1 col-lg-2">
+              <i class="fas fa-heart fa-2x"></i>
+              <h3 class="feature-title">70</h3>
+              <p>Favourite</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="quantity">
+          <button class="minus-btn" type="button" name="button">
+            <i class="fas fa-minus"></i>
+          </button>
+          <input type="text" name="name" value="1">
+          <button class="plus-btn" type="button" name="button">
+            <i class="fas fa-plus"></i>
+          </button>
+          <span><a href="../Thank you.html" class="hero-btn black-btn cart">Add to Cart</a></span>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+
+  <!------ Footer ------>
+  <section class="footer">
+    <h4>Our media <i class="far fa-handshake"></i></h4>
+    <p>Our social media for receiving new information and update <br> Thank you for your support</p>
+    <div class="icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> by Our Professional Team</p>
+  </section>
+
+  <!------ JavaScript for Toggle Menu ------>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+
+    $('.minus-btn').on('click', function(e) {
+      e.preventDefault();
+      var $this = $(this);
+      var $input = $this.closest('div').find('input');
+      var value = parseInt($input.val());
+
+      if (value > 1) {
+        value = value - 1;
+      } else {
+        value = 0;
+      }
+
+      $input.val(value);
+
+    });
+
+    $('.plus-btn').on('click', function(e) {
+      e.preventDefault();
+      var $this = $(this);
+      var $input = $this.closest('div').find('input');
+      var value = parseInt($input.val());
+
+      if (value < 100) {
+        value = value + 1;
+      } else {
+        value = 100;
+      }
+
+      $input.val(value);
+    });
+
+
+
+  </script>
+</body>
+
+</html>
