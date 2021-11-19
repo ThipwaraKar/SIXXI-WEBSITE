@@ -41,5 +41,5 @@ await driver.quit();
 }
 
 async function testSixxi1 (){
-    await driver.findElement(By.id)
+    await driver.findElement(By.linkText("LOGIN")).click();
 }
