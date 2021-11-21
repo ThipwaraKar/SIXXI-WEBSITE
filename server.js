@@ -21,7 +21,7 @@ app.use(express.json())
 
 app.post('/api/login', async (req, res) => {
 	const { Lusername, Lpassword } = req.body
-	const user = await User.findOne({ Lusername }).lean()
+	const user = await User.findOne({'username': Lusername }).lean()
 
 	if (!user) {
 		return res.json({ status: 'error', error: 'Invalid username/password' })
