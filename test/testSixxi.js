@@ -32,6 +32,7 @@ function build() {
 
 
 
+
 //testfunction()
 testSignup();
 //testLogin();
@@ -105,11 +106,9 @@ async function testLogin2() {
     await setTimeout(async() => {
         driver.findElement(By.xpath("//button[@id='sign-in-btn']")).click();
          await setTimeout(async()=>{
-             console.log('Here')
+           //  console.log('Here')
              var username = driver.findElement(By.id("Lusername"));
             var password = driver.findElement(By.id("Lpassword"));
-          //  await username.sendKeys("admin1");
-          //  await password.sendKeys("admin1234");
              await username.sendKeys("admin11");
             await password.sendKeys("admin1234");
             await driver.findElement(By.xpath("//form[@id='login']/input")).click();
@@ -117,10 +116,33 @@ async function testLogin2() {
             try { 
                  let alert = await driver.switchTo().alert()
                         let alertText = await alert.getText()
+                        
+                        console.log('-------------Test LogIn----------')
                         console.log(alertText)
+                        //[RTM]Testcase : Check uncreate account
                         assert.strictEqual(alertText, 'Invalid username/password')
                         await driver.switchTo().alert().accept();
                         console.log('> Test case passed')
+
+                         //[RTM]Testcase : login succesfully
+                        await username.clear().then(await username.sendKeys('test11'))
+                        await password.clear().then(await password.sendKeys('test11'))
+                        await driver.findElement(By.xpath("//form[@id='login']/input")).then(async(element2)=>{
+                            await element2.click()
+                            await setTimeout(async()=>{
+                                try {                                   
+           
+                                let alert2 = await driver.switchTo().alert()
+                                let alertText2 = await alert2.getText()
+                                console.log(alertText2)
+                               
+                                await driver.switchTo().alert().accept();
+                                 } catch (NoSuchAlertError) {
+                                    console.log('Loin succesfully')
+                                    console.log('> Test case passed')
+                                }
+                            },3000)
+                        })
                 
             } catch (testCaseError) {
                 if(testCaseError.code == 'ERR_ASSERTION'){
@@ -131,17 +153,12 @@ async function testLogin2() {
             }},2000)
           
          },5000)
-    }, 3000)
+    }, 10000)
 
 }
 
 async function testSignup() {
-    /* driver =  await new webdriver.Builder()
-              .forBrowser("chrome")
-              .setChromeOptions(chromeOptions)
-              .build();
-              driver.get("http://localhost:9999/")*/
-
+  
     try {
         await build()
         await driver.findElement(By.linkText("LOGIN")).click();
@@ -159,21 +176,44 @@ async function testSignup() {
            // username.sendKeys("test3");
            // email.sendKeys("test3@gmail.com");
            // password.sendKeys("test1234")
-              username.sendKeys("test9");
-             email.sendKeys("test9@gmail.com");
-            password.sendKeys("test99")
+              username.sendKeys("test12");
+             email.sendKeys("test12@gmail.com");
+            password.sendKeys("test12")
             driver.findElement(By.xpath("//input[@id='sign-up-btn2']")).then(async (element) => {
                 await element.click()
                 await setTimeout(async () => {
                     try {
+                        console.log('-------------Test SignUp----------')
+
+                        //Test if duplicated user name
                         let alert = await driver.switchTo().alert()
                         let alertText = await alert.getText()
                         assert.strictEqual(alertText, 'Username already in use')
                         await driver.switchTo().alert().accept();
+                        console.log(alertText)
+                        console.log('> Test case passed') 
+
+                        //[RTM]Testcase#2 if username is blank
+                        await username.clear().then(await username.sendKeys('test13'))
+                        await email.clear().then(await email.sendKeys('test13@gamil.com'))
+                        await password.clear()
+                        await driver.findElement(By.xpath("//input[@id='sign-up-btn2']")).then(async(element2)=>{
+                            await element2.click()
+                            await setTimeout(async()=>{
+                                let alert2 = await driver.switchTo().alert()
+                                let alertText2 = await alert2.getText()
+                                console.log(alertText2)
+                                assert.strictEqual(alertText2, 'Invalid password')
+                                console.log('> Test case passed') 
+                                await driver.switchTo().alert().accept();
+                                
+                            },3000)
+                        })
                         await testLogin2()
-                        console.log('> Test case passed')
+                    
                     } catch (testCaseError) {
                         if(testCaseError.code == 'ERR_ASSERTION'){
+                            console.log(testCaseError)
                             console.log("> Test case failed")
                             await driver.switchTo().alert().accept();
                         }else{
@@ -191,7 +231,6 @@ async function testSignup() {
 
         var title = await driver.getTitle();
         console.log('Title is:', title);
-
         /*await setTimeout(() => {
             driver.quit();
         }, 30000)*/
