@@ -27,80 +27,57 @@ function build() {
     driver.get("http://localhost:9999/")
 }
 
-//build()
-//driver.get("http://localhost:9999/")
 
 
-
-
-//testfunction()
 testSignup();
-//testLogin();
-//testSeeMenuList();
-//testSearch();
-async function testfunction() {
-    var searchString = "Automation testing with Selenium and JavaScript";
 
 
-    await driver.findElement(By.name("q")).sendKeys(searchString, Key.RETURN);
-
-    //Verify the page title and print it
-    var title = await driver.getTitle();
-    console.log('Title is:', title);
-
-    //It is always a safe practice to quit the browser after execution
-    await driver.quit();
-}
 async function testSeeMenuList() {
-    await build()
+    //await build()
+    console.log('-------------Test SeeMenulist----------')
     await driver.findElement(By.linkText("MENU")).click();
     await driver.findElement(By.linkText("Main Dish")).click();
     var actualUrl = await driver.getCurrentUrl();
     var expectedUrl = "http://localhost:9999/Menu.html";
-    //console.log(actualUrl)
+    console.log(actualUrl)
     assert.strictEqual(actualUrl, expectedUrl, "Invalid URL");
+    console.log('> Test case passed')
 
+    await setTimeout(async function waitTwoSeconds() {
     await driver.findElement(By.linkText("MENU")).click();
     await driver.findElement(By.linkText("Dessert")).click();
     var actualUrl2 = await driver.getCurrentUrl();
     var expectedUrl2 = "http://localhost:9999/Dessert.html";
-    console.log(actualUrl)
+    console.log(actualUrl2)
     assert.strictEqual(actualUrl2, expectedUrl2, "Invalid URL");
+    console.log('> Test case passed')
+}, 2000)
 
-    await testSearch();
-    await setTimeout(function waitTwoSeconds() {
+await setTimeout(function waitTwoSeconds() {
+    testSearch();
+}, 10000)
+   // await testSearch();
+   /* await setTimeout(function waitTwoSeconds() {
         driver.quit();
-    }, 2000)
+    }, 2000)*/
 
 }
 
 async function testSearch() {
 
-    console.log('testSearch')
+    //console.log('testSearch')
     var searchString = "T";
     await driver.findElement(By.xpath("//input[@type='text']")).sendKeys(searchString);
     await driver.findElement(By.linkText("Trail Mix Pancakes")).click();
+    console.log('-------------Test testSearch----------')
     var actualUrl2 = await driver.getCurrentUrl();
     var expectedUrl2 = "http://localhost:9999/Pancakes/Trail%20Mix%20Pancakes.html";
     console.log(actualUrl2)
     assert.strictEqual(actualUrl2, expectedUrl2, "Invalid URL");
+    console.log('> Test case passed')
 }
 
-async function testLogin() {
-    await build()
-    await driver.findElement(By.linkText("LOGIN")).click();
-    var username = driver.findElement(By.id("Lusername"));
-    var password = driver.findElement(By.id("Lpassword"));
-    await username.sendKeys("test1@gmail.com");
-    await password.sendKeys("test1");
-    await driver.findElement(By.xpath("input[@value='Login' and @type='submit']")).submit();
-    //new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector("input.submit[ id='login-btn1' ]"))).submit();
 
-    await setTimeout(function waitTwoSeconds() {
-        driver.quit();
-    }, 2000)
-
-}
 
 async function testLogin2() {
     await setTimeout(async() => {
@@ -109,7 +86,7 @@ async function testLogin2() {
            //  console.log('Here')
              var username = driver.findElement(By.id("Lusername"));
             var password = driver.findElement(By.id("Lpassword"));
-             await username.sendKeys("admin11");
+             await username.sendKeys("admin invalid");
             await password.sendKeys("admin1234");
             await driver.findElement(By.xpath("//form[@id='login']/input")).click();
             await setTimeout(async() => {
@@ -119,12 +96,37 @@ async function testLogin2() {
                         
                         console.log('-------------Test LogIn----------')
                         console.log(alertText)
-                        //[RTM]Testcase : Check uncreate account
+                        //[RTM]Testcase : Check invalid username
                         assert.strictEqual(alertText, 'Invalid username/password')
                         await driver.switchTo().alert().accept();
                         console.log('> Test case passed')
 
-                         //[RTM]Testcase : login succesfully
+                        //[RTM]Testcase#3 login with emptpy username              
+                       await username.clear()
+                       await driver.findElement(By.xpath("//form[@id='login']/input")).then(async(element5)=>{
+                           await element5.click()
+                           await setTimeout(async()=>{
+                               let alert5 = await driver.switchTo().alert()
+                               let alertText5 = await alert5.getText()
+                               console.log(alertText5)
+                               assert.strictEqual(alertText5, 'Invalid username/password')
+                               console.log('> Test case passed') 
+                               await driver.switchTo().alert().accept();
+
+                        //[RTM]Testcase#3 Check invalid password   
+                        await username.sendKeys('admin1')
+                        await password.clear().then(await password.sendKeys('invalidpass'))
+                        await driver.findElement(By.xpath("//form[@id='login']/input")).then(async(element6)=>{
+                             await element6.click()
+                            await setTimeout(async()=>{
+                                       let alert6 = await driver.switchTo().alert()
+                                       let alertText6 = await alert6.getText()
+                                       console.log(alertText6)
+                                       assert.strictEqual(alertText6, 'Invalid username/password')
+                                       console.log('> Test case passed') 
+                                       await driver.switchTo().alert().accept();
+        
+                        //[RTM]Testcase : login succesfully
                         await username.clear().then(await username.sendKeys('test11'))
                         await password.clear().then(await password.sendKeys('test11'))
                         await driver.findElement(By.xpath("//form[@id='login']/input")).then(async(element2)=>{
@@ -141,8 +143,20 @@ async function testLogin2() {
                                     console.log('Loin succesfully')
                                     console.log('> Test case passed')
                                 }
+                                
+
                             },3000)
                         })
+                                       
+                                   },3000)
+                               })      
+                               
+                           },3000)
+                       })
+                        //await testSeeMenuList()
+                         await setTimeout(function waitTwoSeconds() {
+                            testSeeMenuList()
+                    }, 10000)
                 
             } catch (testCaseError) {
                 if(testCaseError.code == 'ERR_ASSERTION'){
@@ -206,9 +220,43 @@ async function testSignup() {
                                 assert.strictEqual(alertText2, 'Invalid password')
                                 console.log('> Test case passed') 
                                 await driver.switchTo().alert().accept();
+                        
+                                
+                     //[RTM]Testcase#3 Password too small.                       
+                       await password.clear().then(await password.sendKeys('test'))
+                       await driver.findElement(By.xpath("//input[@id='sign-up-btn2']")).then(async(element3)=>{
+                           await element3.click()
+                           await setTimeout(async()=>{
+                               let alert3 = await driver.switchTo().alert()
+                               let alertText3 = await alert3.getText()
+                               console.log(alertText3)
+                               assert.strictEqual(alertText3, 'Password too small. Should be atleast 6 characters')
+                               console.log('> Test case passed') 
+                               await driver.switchTo().alert().accept();
+
+                        /*[RTM]Testcase#3 Email incorrect format                    
+                       await email.clear().then(await email.sendKeys('test'))
+                       await driver.findElement(By.xpath("//input[@id='sign-up-btn2']")).then(async(element4)=>{
+                           await element4.click()
+                           await setTimeout(async()=>{
+                               let alert4 = await driver.switchTo().alert()
+                               let alertText4 = await alert4.getText()
+                               console.log(alertText4)
+                               assert.strictEqual(alertText4, 'Password too small. Should be atleast 6 characters')
+                               console.log('> Test case passed') 
+                               await driver.switchTo().alert().accept();
+                               
+                           },3000)
+                       })*/
+                               
+                           },3000)
+                       })
+
                                 
                             },3000)
                         })
+                        
+                      
                         await testLogin2()
                     
                     } catch (testCaseError) {
